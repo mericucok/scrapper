@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Highlighter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+        h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .message {
+            margin-top: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Product Highlighter</h3>
+    <button id="highlightBtn">Detect & Download Products</button>
+    <div id="statusMessage" class="message"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
